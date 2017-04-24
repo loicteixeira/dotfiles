@@ -18,16 +18,6 @@ To update, `cd` into your local `dotfiles` repository and then:
 source bootstrap.sh
 ```
 
-### Specify the `$PATH`
-
-If `~/.path` exists, it will be sourced along with the other files, before anything else.
-
-Here’s an example `~/.path` file that adds `/usr/local/bin` to the `$PATH`:
-
-```bash
-export PATH="/usr/local/bin:$PATH"
-```
-
 ### Add custom commands without creating a new fork
 
 If `~/.extra` exists, it will be sourced along with the other files. It can be used to add a few custom commands without the need to fork this entire repository, or to add commands which shouldn't be checked into a public repository or which are specific to an installation.
