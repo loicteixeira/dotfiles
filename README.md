@@ -22,9 +22,17 @@ source bootstrap.sh
 
 If `~/.extra` exists, it will be sourced along with the other files. It can be used to add a few custom commands without the need to fork this entire repository, or to add commands which shouldn't be checked into a public repository or which are specific to an installation.
 
-Copy the example extra file and update accordingly:
+My `~/.extra` looks something like this:
 
 ```bash
-cp ~/.extra-example ~/.extra
-vim ~/.extra
+# Git credentials
+GIT_AUTHOR_NAME="..."
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="..."
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+# Git config
+git config --global push.default simple
 ```

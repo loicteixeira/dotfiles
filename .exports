@@ -17,3 +17,27 @@ export LC_ALL='en_US.UTF-8';
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+
+# Install QuickLook plugins for all users.
+export HOMEBREW_CASK_OPTS="--qlplugindir=/Library/QuickLook"
+
+
+# Version Managers
+if [ -d $HOME/.nvm ]; then
+    export NVM_DIR="$HOME/.nvm";
+elif [ -d /usr/local/nvm ]; then
+    export NVM_DIR="/usr/local/nvm";
+fi;
+
+if [ -d $HOME/.pyenv ]; then
+    export PYENV_ROOT="$HOME/.pyenv";
+elif [ -d /usr/local/pyenv ]; then
+    export PYENV_ROOT="/usr/local/pyenv";
+fi;
+
+if [ -d $HOME/.rbenv ]; then
+    export RBENV_ROOT="$HOME/.rbenv";
+elif [ -d /usr/local/rbenv ]; then
+    export RBENV_ROOT="/usr/local/rbenv";
+fi;
