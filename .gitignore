@@ -17,3 +17,8 @@ Thumbs.db
 
 # JetBrains IDE project files
 .idea
+
+# Virtual environments
+.direnv
+.envrc
+.venv
