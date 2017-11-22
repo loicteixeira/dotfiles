@@ -15,8 +15,9 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
-# JetBrains IDE project files
+# IDE project files
 .idea
+.vscode
 
 # Virtual environments
 .direnv
