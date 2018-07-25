@@ -13,6 +13,7 @@ function doIt() {
         --exclude ".DS_Store" \
         --exclude "bootstrap.sh" \
         --exclude "brew.sh" \
+        --exclude "brew-cask.sh" \
         --exclude "README.md" \
         -avh --no-perms . ~;
     source ~/.bash_profile;
