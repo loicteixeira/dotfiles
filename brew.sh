@@ -55,6 +55,10 @@ brew install curl
 brew install direnv
 brew install heroku/brew/heroku
 brew install htop
+brew install nvm
+brew install pipenv
+brew install pyenv
+brew install rbenv
 brew install tmux
 brew install tree
 brew install vagrant
