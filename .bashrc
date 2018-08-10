@@ -28,3 +28,7 @@ fi;
 if [ $RBENV_ROOT ]; then
     eval "$(rbenv init -)";
 fi;
+
+if [ -s "/usr/local/bin/direnv" ]; then
+    eval "$(direnv hook bash)"
+fi;
