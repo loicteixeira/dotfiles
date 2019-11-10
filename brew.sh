@@ -59,6 +59,7 @@ brew install nvm
 brew install pipenv
 brew install pyenv
 brew install rbenv
+brew install starship
 brew install tmux
 brew install tree
 brew install vagrant

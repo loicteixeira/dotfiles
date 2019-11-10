@@ -1,9 +1,13 @@
 # Load the shell dotfiles, and then some:
 # * ~/.extra can be used for other settings which aren't checked in.
-for file in ~/.{bash_prompt,exports,path,aliases,functions,extra}; do
+for file in ~/.{exports,path,aliases,functions,extra}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+
+# Prompt
+eval "$(starship init bash)"
 
 
 # Add tab completion for many Bash commands
