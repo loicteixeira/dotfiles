@@ -14,10 +14,10 @@ apps=(
     imageoptim
     iterm2
     openemu
+    rectangle
     signal
     skype
     slack
-    spectacle
     spotify
     steam
     typora
