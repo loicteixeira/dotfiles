@@ -20,7 +20,9 @@ apps=(
     slack
     spotify
     steam
+    telegram
     typora
+    vagrant
     virtualbox
     visual-studio-code
     vlc

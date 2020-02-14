@@ -53,6 +53,7 @@ brew install cloc
 brew install ctags
 brew install curl
 brew install direnv
+brew install exiftools
 brew install heroku/brew/heroku
 brew install htop
 brew install nvm
@@ -62,5 +63,4 @@ brew install rbenv
 brew install starship
 brew install tmux
 brew install tree
-brew install vagrant
 brew install whois
