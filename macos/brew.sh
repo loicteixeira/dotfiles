@@ -43,7 +43,7 @@ brew install gnupg
 brew install vim
 brew install git
 brew install grep
-brew install openssh
+# brew install openssh  # Installing this prevent the use of UseKeychain option in config
 brew install rsync
 brew install screen
 
