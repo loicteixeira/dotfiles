@@ -4,23 +4,26 @@ apps=(
     1password
     alfred
     appcleaner
-    battle-net
-    dash
+#    battle-net
+#    dash
     docker
     dropbox
     firefox
-    flux
+#    flux
     google-chrome
     imageoptim
-    iterm2
+#    iterm2
     openemu
     rectangle
+    scroll-reverser
     signal
     skype
     slack
     spotify
     steam
+    stretchly
     telegram
+    toggl
     typora
     vagrant
     virtualbox
