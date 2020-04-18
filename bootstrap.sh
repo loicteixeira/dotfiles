@@ -8,15 +8,7 @@ git pull origin master;
 
 # Copy the files to the home folder and source `~/.bash_profile`
 function doIt() {
-    rsync \
-        --exclude ".git/" \
-        --exclude ".DS_Store" \
-        --exclude "bootstrap.sh" \
-        --exclude "brew.sh" \
-        --exclude "brew-cask.sh" \
-        --exclude "macos.sh" \
-        --exclude "README.md" \
-        -avh --no-perms . ~;
+    rsync --exclude ".DS_Store" -avh --no-perms "dotfiles/" ~;
     source ~/.bash_profile;
 }
 

@@ -1,0 +1,1 @@
+List of softwares supporting XDG Base Directory specification: https://wiki.archlinux.org/index.php/XDG_Base_Directory

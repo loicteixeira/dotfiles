@@ -20,9 +20,9 @@ source bootstrap.sh
 
 ### Add custom commands without creating a new fork
 
-If `~/.extra` exists, it will be sourced along with the other files. It can be used to add a few custom commands without the need to fork this entire repository, or to add commands which shouldn't be checked into a public repository or which are specific to an installation.
+If `~/.config/bash/extras` exists, it will be sourced along with the other files. It can be used to add a few custom commands without the need to fork this entire repository, or to add commands which shouldn't be checked into a public repository or which are specific to an installation.
 
-My `~/.extra` looks something like this:
+My `~/.config/bash/extras` looks something like this:
 
 ```bash
 # Git credentials
