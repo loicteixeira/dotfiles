@@ -21,8 +21,9 @@ fi;
 
 
 # Version Managers
-if [ -s "$NVM_DIR/nvm.sh" ]; then
-    source "$NVM_DIR/nvm.sh";
+if [ -s "$NVM_DIR" ]; then
+    [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh";
+    [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm";
 fi;
 
 if [ $PYENV_ROOT ]; then
