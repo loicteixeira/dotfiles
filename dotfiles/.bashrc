@@ -26,11 +26,11 @@ if [ -s "$NVM_DIR" ]; then
     [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm";
 fi;
 
-if [ $PYENV_ROOT ]; then
+if [ "$PYENV_ROOT" ]; then
     eval "$(pyenv init -)";
 fi;
 
-if [ $RBENV_ROOT ]; then
+if [ "$RBENV_ROOT" ]; then
     eval "$(rbenv init -)";
 fi;
 

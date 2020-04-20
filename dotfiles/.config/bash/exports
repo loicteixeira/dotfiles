@@ -23,14 +23,14 @@ export MANPAGER='less -X';
 
 
 # Version Managers
-if [ -d $HOME/.nvm ]; then
+if [ -d "$HOME/.nvm" ]; then
     export NVM_DIR="$HOME/.nvm";
 fi;
 
-if [ -d $HOME/.pyenv ]; then
+if [ -d "$HOME/.pyenv" ]; then
     export PYENV_ROOT="$HOME/.pyenv";
 fi;
 
-if [ -d $HOME/.rbenv ]; then
+if [ -d "$HOME/.rbenv" ]; then
     export RBENV_ROOT="$HOME/.rbenv";
 fi;
