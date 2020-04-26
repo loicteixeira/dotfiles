@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="~/.local/bin:/usr/local/sbin:/usr/local/bin:$PATH"
 
 
 # Version Managers
