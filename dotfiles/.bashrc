@@ -10,13 +10,15 @@ unset file;
 eval "$(starship init bash)"
 
 
-# Add tab completion for many Bash commands
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    source $(brew --prefix)/etc/bash_completion;
-fi;
+# MacOS: Add tab completion for many Bash commands
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+        source $(brew --prefix)/etc/bash_completion;
+    fi;
 
-if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
-    source $(brew --prefix)/etc/bash_completion.d/git-completion.bash;
+    if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
+        source $(brew --prefix)/etc/bash_completion.d/git-completion.bash;
+    fi;
 fi;
 
 
@@ -34,6 +36,6 @@ if [ "$RBENV_ROOT" ]; then
     eval "$(rbenv init -)";
 fi;
 
-if [ -s "/usr/local/bin/direnv" ]; then
+if command -v direnv 1>/dev/null 2>&1; then
     eval "$(direnv hook bash)"
 fi;
