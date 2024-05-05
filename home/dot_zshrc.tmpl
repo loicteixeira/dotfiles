@@ -1,0 +1,31 @@
+# User bins in path
+export PATH="$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+
+# Prefer US English and use UTF-8.
+export LANG='en_US.UTF-8';
+export LC_ALL='en_US.UTF-8';
+
+# History
+setopt HIST_EXPIRE_DUPS_FIRST # Cause the oldest history event that has a duplicate to be lost before losing a unique event from the list.
+setopt HIST_IGNORE_DUPS       # Do not enter command lines into the history list if they are duplicates of the previous event.
+setopt HIST_IGNORE_ALL_DUPS   # If a new command line being added to the history list duplicates an older one, the older command is removed from the list.
+setopt HIST_IGNORE_SPACE      # Remove command lines from the history list when the first character on the line is a space.
+setopt HIST_FIND_NO_DUPS      # When searching for history entries in the line editor, do not display duplicates of a line previously found, even if the duplicates are not contiguous.
+setopt HIST_SAVE_NO_DUPS      # When writing out the history file, older commands that duplicate newer ones are omitted.
+
+# Make vim the default editor.
+export EDITOR='vim';
+
+# Don’t clear the screen after quitting a manual page.
+export MANPAGER='less -X';
+
+# Prompt
+eval "$(starship init zsh)"
+
+# Version manager
+source $(brew --prefix asdf)/libexec/asdf.sh
+
+# Aliases
+{{ if .isWork -}}
+alias dd=~/Work/dashdoc/dd.py
+{{ end -}}

@@ -1,0 +1,5 @@
+[character]  # https://starship.rs/config/#character
+disabled = true
+
+[docker_context]  # https://starship.rs/config/#docker-context  
+disabled = true

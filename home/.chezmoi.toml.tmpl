@@ -1,0 +1,15 @@
+# The following variables are only available within this TOML template file
+
+{{- $personalName := promptStringOnce . "name" "What is your name" "Loïc Teixeira" -}}
+{{- $personalEmail := promptStringOnce . "email" "What is your email" -}}
+{{- $isWork := promptBoolOnce . "isWork" "Is it a work machine" -}}
+
+# The actual template
+
+progress = true
+
+[data]
+
+	name = {{ $personalName | quote }}
+	email = {{ $personalEmail | quote }}
+	isWork = {{ $isWork }}
