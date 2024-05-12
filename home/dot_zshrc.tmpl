@@ -19,8 +19,11 @@ export EDITOR='vim';
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
 
-# Brew
+# Brew (with zsh autocomplete)
 eval "$(/opt/homebrew/bin/brew shellenv)"
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+autoload -Uz compinit
+compinit
 
 # Prompt
 starship_activate="$HOME/.config/starship/activate"
