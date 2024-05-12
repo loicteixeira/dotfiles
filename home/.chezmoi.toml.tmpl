@@ -9,7 +9,46 @@
 progress = true
 
 [data]
-
 	name = {{ $personalName | quote }}
 	email = {{ $personalEmail | quote }}
 	isWork = {{ $isWork }}
+
+[data.packages.darwin.brews]
+	common = [
+		"asdf",
+		"coreutils",
+		"direnv",
+		"starship",
+		"vim",
+	]
+	personal = [
+		"exiftool",
+	]
+	work = [
+	]
+
+[data.packages.darwin.casks]
+	common = [
+		"1password",
+		"appcleaner",
+		"docker",
+		"firefox",
+		"google-chrome",
+		"iterm2",
+		"raycast",
+		"slack",
+		"spotify",
+		"visual-studio-code"
+	]
+	personal = [
+		"android-file-transfer",
+		"dropbox",
+		"obsidian",
+		"telegram",
+		"vlc",
+	]
+	work = [
+		"google-cloud-sdk",
+		"linear",
+		"notion",
+	]

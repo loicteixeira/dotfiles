@@ -1,0 +1,27 @@
+#! /usr/bin/env bash
+
+set -eufo pipefail
+
+{{ $brews := concat
+    .packages.darwin.brews.common
+    (.isWork | ternary .packages.darwin.brews.work .packages.darwin.brews.personal)
+    | sortAlpha
+    | uniq
+-}}
+{{ $casks := concat
+    .packages.darwin.casks.common
+    (.isWork | ternary .packages.darwin.casks.work .packages.darwin.casks.personal)
+    | sortAlpha
+    | uniq
+-}}
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+{{ range ($brews) -}}
+brew "{{ . }}"
+{{ end -}}
+{{ range ($casks) -}}
+cask "{{ . }}"
+{{ end -}}
+EOF
+
+brew update && brew upgrade
