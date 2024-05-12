@@ -19,21 +19,18 @@ export EDITOR='vim';
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
 
-# Brew (with zsh autocomplete)
-eval "$(/opt/homebrew/bin/brew shellenv)"
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-autoload -Uz compinit
-compinit
-
-# Prompt
-starship_activate="$HOME/.config/starship/activate"
-[ -f "$starship_activate" ] && source "$starship_activate";
-unset starship_activate
-
-# Versions manager
-asdf_activate="$HOME/.config/asdf/activate"
-[ -f "$asdf_activate" ] && source "$asdf_activate";
-unset asdf_activate
+# Activate services
+services=(
+    "brew"
+    "starship"
+    "asdf"
+)
+for service in "${services[@]}"
+do
+    service_activation_file=~/.config/${service}/activate
+    [ -r "${service_activation_file}" ] && [ -f "${service_activation_file}" ] && source "${service_activation_file}";
+done;
+unset services service service_activation_file;
 
 # Aliases
 {{ if .isWork -}}
