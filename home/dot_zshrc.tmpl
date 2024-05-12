@@ -23,7 +23,9 @@ export MANPAGER='less -X';
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Prompt
-eval "$(starship init zsh)"
+starship_activate="$HOME/.config/starship/activate"
+[ -f "$starship_activate" ] && source "$starship_activate";
+unset starship_activate
 
 # Versions manager
 asdf_activate="$HOME/.config/asdf/activate"
