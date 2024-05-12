@@ -1,7 +1,9 @@
 #!/usr/bin/env zsh
 
+# General config
 export ASDF_CONFIG_FILE="$HOME/.config/asdf/config"
 source $(brew --prefix asdf)/libexec/asdf.sh
 
-# Plugins specific
+# Golang plugin specifics
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 source ~/.asdf/plugins/golang/set-env.zsh
