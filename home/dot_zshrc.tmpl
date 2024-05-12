@@ -33,6 +33,10 @@ done;
 unset services service service_activation_file;
 
 # Aliases
-{{ if .isWork -}}
-alias dd=~/Work/dashdoc/dd.py
+{{ $aliases := merge
+    .aliases.common
+    (.isWork | ternary .aliases.work .aliases.personal)
+-}}
+{{ range $name, $value := $aliases -}}
+alias {{ $name }}='{{ $value }}'
 {{ end -}}

@@ -1,0 +1,19 @@
+[aliases.common]
+# List files with more information
+#   -l    List files in the long format
+#   -h    When used with the -l option, use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, etc
+#   -F    Suffix paths: directories /, executables *, symbolic links @, sockets =, whiteouts %, FIFOs |
+#   -G    Enable colorized output
+ll = 'ls -lhFG'
+la = 'ls -lhaFG'
+ls = 'command ls -G'
+
+# Grep with colours
+grep = 'grep --color=auto'
+fgrep = 'fgrep --color=auto'
+egrep = 'egrep --color=auto'
+
+[aliases.personal]
+
+[aliases.work]
+dd = '~/Work/dashdoc/dd.py'
