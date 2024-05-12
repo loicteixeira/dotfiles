@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+export ASDF_CONFIG_FILE="$HOME/.config/asdf/config"
+source $(brew --prefix asdf)/libexec/asdf.sh
