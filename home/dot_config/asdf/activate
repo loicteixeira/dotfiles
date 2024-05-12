@@ -4,4 +4,4 @@ export ASDF_CONFIG_FILE="$HOME/.config/asdf/config"
 source $(brew --prefix asdf)/libexec/asdf.sh
 
 # Plugins specific
-source $(brew --prefix asdf)/plugins/golang/set-env.zsh
+source ~/.asdf/plugins/golang/set-env.zsh
