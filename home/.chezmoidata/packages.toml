@@ -2,6 +2,7 @@
 common = ["asdf", "coreutils", "direnv", "starship", "vim"]
 personal = ["exiftool"]
 work = [
+	"cloud-sql-proxy",
 	# TODO: Add a way to setup paths per machine
 	# Needed exports after installing libpq
 	# 	export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
