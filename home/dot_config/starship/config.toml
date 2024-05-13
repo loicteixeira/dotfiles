@@ -3,3 +3,6 @@ disabled = true
 
 [docker_context] # https://starship.rs/config/#docker-context
 disabled = true
+
+[gcloud] # https://starship.rs/config/#google-cloud-gcloud
+disabled = true
