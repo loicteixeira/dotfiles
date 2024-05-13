@@ -6,7 +6,6 @@ work = []
 [packages.darwin.casks]
 common = [
 	"1password",
-	"appcleaner",
 	"docker",
 	"firefox",
 	"google-chrome",
@@ -16,5 +15,12 @@ common = [
 	"spotify",
 	"visual-studio-code",
 ]
-personal = ["android-file-transfer", "dropbox", "obsidian", "telegram", "vlc"]
+personal = [
+	"android-file-transfer",
+	"appcleaner",
+	"dropbox",
+	"obsidian",
+	"telegram",
+	"vlc",
+]
 work = ["google-cloud-sdk", "linear", "notion"]
