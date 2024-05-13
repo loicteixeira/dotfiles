@@ -1,7 +1,18 @@
 [packages.darwin.brews]
 common = ["asdf", "coreutils", "direnv", "starship", "vim"]
 personal = ["exiftool"]
-work = []
+work = [
+	# TODO: Add a way to setup paths per machine
+	# Needed exports after installing libpq
+	# 	export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+	# 	export PKG_CONFIG_PATH="/opt/homebrew/opt/libpq/lib/pkgconfig"
+	# 	export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+	# 	export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+	"libpq",      # Needed for building psycopg2 (python pip)
+	"libxml2",    # Needed for building xmlsec (python pip)
+	"libxmlsec1", # Needed for building xmlsec (python pip)
+	"pkg-config", # Needed for building xmlsec (python pip)
+]
 
 [packages.darwin.casks]
 common = [
