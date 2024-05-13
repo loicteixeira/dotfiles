@@ -1,9 +1,14 @@
 #!/usr/bin/env zsh
 
 # General config
-export ASDF_CONFIG_FILE="$HOME/.config/asdf/config"
+export ASDF_CONFIG_FILE="${HOME}/.config/asdf/config"
 source $(brew --prefix asdf)/libexec/asdf.sh
+
+# Direnv plugin specifics
+# TODO: Fix this, the command adds the script sourced below, but also modifies the .zshrc file directly.
+# asdf direnv setup --shell zsh --version latest
+source "${HOME}/.config/asdf-direnv/zshrc"
 
 # Golang plugin specifics
 export ASDF_GOLANG_MOD_VERSION_ENABLED=true
-source ~/.asdf/plugins/golang/set-env.zsh
+source "${HOME}/.asdf/plugins/golang/set-env.zsh"
