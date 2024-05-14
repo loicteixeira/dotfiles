@@ -2,6 +2,12 @@
 
 set -eufo pipefail
 
+{{ $taps := concat
+    .packages.darwin.taps.common
+    (.isWork | ternary .packages.darwin.taps.work .packages.darwin.brews.personal)
+    | sortAlpha
+    | uniq
+-}}
 {{ $brews := concat
     .packages.darwin.brews.common
     (.isWork | ternary .packages.darwin.brews.work .packages.darwin.brews.personal)
@@ -16,6 +22,9 @@ set -eufo pipefail
 -}}
 
 brew bundle --no-lock --file=/dev/stdin <<EOF
+{{ range ($taps) -}}
+tap {{ . | quote }}
+{{ end -}}
 {{ range ($brews) -}}
 brew "{{ . }}"
 {{ end -}}

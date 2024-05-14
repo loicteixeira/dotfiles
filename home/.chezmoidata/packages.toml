@@ -1,3 +1,8 @@
+[packages.darwin.taps]
+common = ["homebrew/cask-fonts"]
+personal = []
+work = []
+
 [packages.darwin.brews]
 common = ["asdf", "coreutils", "direnv", "starship", "vim"]
 personal = ["exiftool"]
@@ -20,6 +25,8 @@ common = [
 	"1password",
 	"docker",
 	"firefox",
+	"font-fira-code-nerd-font",
+	"font-victor-mono-nerd-font",
 	"google-chrome",
 	"iterm2",
 	"raycast",
