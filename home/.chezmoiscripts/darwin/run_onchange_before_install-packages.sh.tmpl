@@ -26,10 +26,10 @@ brew bundle --no-lock --file=/dev/stdin <<EOF
 tap {{ . | quote }}
 {{ end -}}
 {{ range ($brews) -}}
-brew "{{ . }}"
+brew {{ . | quote }}
 {{ end -}}
 {{ range ($casks) -}}
-cask "{{ . }}"
+cask {{ . | quote }}
 {{ end -}}
 EOF
 
