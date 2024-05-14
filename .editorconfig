@@ -23,5 +23,5 @@ indent_size = 2
 [*.md]
 trim_trailing_whitespace = false
 
-[{*.toml,*.toml.tmpl}]
+[{*.toml,*.toml.tmpl,*.tmpl}]
 indent_style = tab
