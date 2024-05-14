@@ -42,4 +42,4 @@ personal = [
 	"telegram",
 	"vlc",
 ]
-work = ["google-cloud-sdk", "linear", "notion"]
+work = ["google-cloud-sdk", "linear-linear", "notion"]
