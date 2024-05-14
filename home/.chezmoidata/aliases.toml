@@ -13,6 +13,22 @@ grep = 'grep --color=auto'
 fgrep = 'fgrep --color=auto'
 egrep = 'egrep --color=auto'
 
+# Git
+g = 'git'
+ga = 'git add'
+gaa = 'git add .'
+gc = 'git commit'
+gcm = 'git commit -m'
+gd = 'git diff'
+gds = 'git diff --staged'
+gl = 'git log --pretty=oneline -n 20 --graph --abbrev-commit'
+gll = 'git log'
+gph = 'git push'
+gpl = 'git pull'
+gs = 'git status -s'
+gss = 'git status'
+gsw = 'git switch'
+
 [aliases.personal]
 
 [aliases.work]
