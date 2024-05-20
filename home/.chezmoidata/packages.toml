@@ -1,5 +1,5 @@
 [packages.darwin.taps]
-common = ["homebrew/cask-fonts"]
+common = []
 personal = []
 work = []
 
