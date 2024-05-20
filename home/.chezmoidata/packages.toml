@@ -5,7 +5,7 @@ work = []
 
 [packages.darwin.brews]
 common = ["asdf", "bat", "coreutils", "direnv", "ripgrep", "starship", "vim"]
-personal = ["exiftool"]
+personal = ["exiftool", "golangci-lint"]
 work = [
 	"cloud-sql-proxy",
 	# TODO: Add a way to setup paths per machine
