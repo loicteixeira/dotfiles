@@ -4,7 +4,7 @@ set -eufo pipefail
 
 {{ $taps := concat
     .packages.darwin.taps.common
-    (.isWork | ternary .packages.darwin.taps.work .packages.darwin.brews.personal)
+    (.isWork | ternary .packages.darwin.taps.work .packages.darwin.taps.personal)
     | sortAlpha
     | uniq
 -}}
