@@ -29,6 +29,9 @@ gs = 'git status -s'
 gss = 'git status'
 gsw = 'git switch'
 
+# Taskfile https://taskfile.dev/
+t = "task"
+
 [aliases.personal]
 
 [aliases.work]
