@@ -43,4 +43,10 @@ personal = [
 	"telegram",
 	"vlc",
 ]
-work = ["google-cloud-sdk", "linear-linear", "notion"]
+work = [
+	"android-studio",
+	"google-cloud-sdk",
+	"linear-linear",
+	"notion",
+	"zulu@17",
+]
