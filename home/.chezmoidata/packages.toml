@@ -4,7 +4,7 @@ personal = []
 work = []
 
 [packages.darwin.brews]
-common = ["bat", "coreutils", "go-task", "mise", "ripgrep", "starship", "vim"]
+common = ["bat", "coreutils", "mise", "ripgrep", "starship", "vim"]
 personal = ["exiftool", "golangci-lint"]
 work = [
 	"cloud-sql-proxy",

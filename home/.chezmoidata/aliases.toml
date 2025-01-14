@@ -29,10 +29,7 @@ gs = 'git status -s'
 gss = 'git status'
 gsw = 'git switch'
 
-# Taskfile https://taskfile.dev/
-t = "task"
-
-# Mise
+# Mise (https://mise.jdx.dev/)
 mr = "mise run"
 
 [aliases.personal]
