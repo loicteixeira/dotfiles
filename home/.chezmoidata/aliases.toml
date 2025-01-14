@@ -32,6 +32,9 @@ gsw = 'git switch'
 # Taskfile https://taskfile.dev/
 t = "task"
 
+# Mise
+mr = "mise run"
+
 [aliases.personal]
 
 [aliases.work]
