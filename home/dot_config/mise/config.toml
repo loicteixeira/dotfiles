@@ -1,2 +1,28 @@
 [env]
 MISE_NODE_COREPACK = true
+
+[settings]
+idiomatic_version_file = false
+
+[tasks.git-ignore-muse]
+description = "Add muse files to the current repository local ignore list"
+run = '''
+	# Adding `mise.toml` and `mise.lock` to `.git/info/exclude`
+	add_file_to_local_git_ignore() {
+		[ ! -d '.git' ] && echo 'Not a git directory, aborting.' && exit 1
+
+		local filename="$1"
+		local target='.git/info/exclude'
+		local path=$(dirname "${target}")
+
+		mkdir -p "${path}"
+		touch "${target}"
+
+		grep --quiet --line-regexp --fixed-strings -- "${filename}" "${target}" || echo "${filename}" >> "${target}"
+	}
+
+	add_file_to_local_git_ignore 'mise.toml'
+	add_file_to_local_git_ignore 'mise.lock'
+
+	unset -f add_file_to_local_git_ignore
+	'''
