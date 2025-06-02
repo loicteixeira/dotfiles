@@ -14,8 +14,8 @@
 	# Amend the currently staged files to the latest commit
 	amend = commit --amend --reuse-message=HEAD
 
-	# Check out upstream PR locally
-	pr = !sh -c \"git fetch upstream pull/${1}/head:pr/${1} && git checkout pr/${1}\"
+	# Fully re-stage files which are already staged (useful after a pre-commit hook modified those files)
+	restage = !git diff --cached --name-only -z | xargs -0 git add
 
 [apply]
 
