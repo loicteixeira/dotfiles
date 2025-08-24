@@ -21,7 +21,7 @@ set -eufo pipefail
     | uniq
 -}}
 
-brew bundle --no-lock --file=/dev/stdin <<EOF
+brew bundle --file=/dev/stdin <<EOF
 {{ range ($taps) -}}
 tap {{ . | quote }}
 {{ end -}}
