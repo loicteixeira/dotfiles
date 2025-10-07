@@ -1,27 +1,3 @@
-# https://starship.rs/config/#prompt
-format = """
-$username\
-$hostname\
-$localip\
-$directory\
-$git_branch\
-$git_commit\
-$git_state\
-$git_metrics\
-$git_status\
-$sudo\
-$cmd_duration\
-$jobs\
-$battery\
-$time\
-$status\
-$os\
-$container\
-$shell\
-$line_break\
-$character"""
-right_format = "$all" # Default prompt, excluding everything already used in `format`
-
 [character] # https://starship.rs/config/#character
 success_symbol = '[➜](bold green)'
 error_symbol = '[➜](bold red)'
