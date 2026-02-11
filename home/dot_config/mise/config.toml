@@ -1,5 +1,7 @@
 [tools]
 bun = "latest"
+elixir = "1.15.8"
+erlang = "26.2.5.14"
 uv = "latest"
 
 [env]
