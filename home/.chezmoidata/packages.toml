@@ -24,7 +24,7 @@ work = [
 [packages.darwin.casks]
 common = [
 	"1password",
-	"docker",
+	"docker-desktop",
 	"firefox",
 	"font-fira-code-nerd-font",
 	"font-victor-mono-nerd-font",
@@ -46,7 +46,7 @@ personal = [
 ]
 work = [
 	"android-studio",
-	"google-cloud-sdk",
+	"gcloud-cli",
 	"linear-linear",
 	"notion",
 	"zulu@17",
