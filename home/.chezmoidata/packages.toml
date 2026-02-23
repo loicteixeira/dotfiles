@@ -8,6 +8,7 @@ common = ["bat", "coreutils", "mise", "ripgrep", "starship", "vim"]
 personal = ["exiftool", "golangci-lint", "mkcert", "nss"]
 work = [
 	"cloud-sql-proxy",
+	"gh",
 	# TODO: Add a way to setup paths per machine
 	# Needed exports after installing libpq
 	# 	export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
