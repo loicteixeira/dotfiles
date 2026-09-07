@@ -1,0 +1,30 @@
+# Aesthetics
+macos-titlebar-style = tabs
+theme = light:GitHub Light High Contrast,dark:Dracula+
+unfocused-split-fill = #555555
+window-padding-x = 20
+window-padding-y = 10
+window-padding-balance = true
+
+# Behavior
+shell-integration = zsh
+window-save-state = always
+
+# Keybinds
+keybind = global:ctrl+alt+shift+super+grave_accent=toggle_quick_terminal
+keybind = super+left=goto_split:previous
+keybind = super+right=goto_split:next
+keybind = super+enter=ignore
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Typography
+adjust-cell-height = 3
+font-family = FiraCode Nerd Font Mono
+font-size = 20
+font-thicken = true
+font-thicken-strength = 1
+
+# Updates
+auto-update = check
