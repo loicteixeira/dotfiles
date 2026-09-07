@@ -19,6 +19,7 @@ work = [
 	"libxml2",    # Needed for building xmlsec (python pip)
 	"libxmlsec1", # Needed for building xmlsec (python pip)
 	"pkg-config", # Needed for building xmlsec (python pip)
+	"worktrunk",
 ]
 
 [packages.darwin.casks]
@@ -28,26 +29,24 @@ common = [
 	"firefox",
 	"font-fira-code-nerd-font",
 	"font-victor-mono-nerd-font",
+	"ghostty",
 	"google-chrome",
-	"iterm2",
 	"raycast",
-	"slack",
 	"spotify",
 	"visual-studio-code",
+	"zed",
 ]
 personal = [
 	"android-file-transfer",
 	"appcleaner",
 	"dropbox",
-	"gimp",
 	"obsidian",
 	"telegram",
 	"vlc",
 ]
 work = [
-	"android-studio",
 	"gcloud-cli",
 	"linear-linear",
 	"notion",
-	"zulu@17",
+	"slack",
 ]
