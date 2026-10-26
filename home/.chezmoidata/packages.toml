@@ -32,7 +32,6 @@ common = [
 	"ghostty",
 	"google-chrome",
 	"raycast",
-	"spotify",
 	"visual-studio-code",
 	"zed",
 ]
